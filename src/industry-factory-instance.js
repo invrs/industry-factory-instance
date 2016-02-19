@@ -1,5 +1,5 @@
 export default Class =>
-  class extends Class {
+  class IndustryFactoryInstance extends Class {
     static factory(...args) {
       let key = "default"
 

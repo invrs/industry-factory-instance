@@ -1,1 +1,1 @@
-module.exports = require("./lib/factory-instance").default
+module.exports = require("./lib/industry-factory-instance").default
