@@ -1,5 +1,5 @@
 import { factory } from "industry"
-import factory_instance from "../../"
+import { factory_instance } from "../../"
 
 describe("factory_instance", () => {
   let test, id

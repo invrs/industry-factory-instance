@@ -6,19 +6,17 @@ An Industry plugin that creates an instance of the factory class.
 
 ```js
 import { factory } from "industry"
-import factory_instance from "../../"
+import { factory_instance } from "industry-factory-instance"
 
-describe("factory_instance", () => {
-  let test, id
+let test = factory()
+  .set("factory_instance", factory_instance)
+  .base(class {
+    constructor() {
+      this.rand = Math.random()
+    }
+  })
 
-  function makeTest(id) {
-    return factory()
-      .set("factory_instance", factory_instance)
-      .base(class {
-        constructor() {
-          this.id = id
-          this.rand = Math.random()
-        }
-      })
-  }
+test().rand      == test().rand       // true
+test("key").rand == test("key").rand  // true
+test("key").rand == test().rand       // false
 ```
