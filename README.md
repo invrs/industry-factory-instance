@@ -1,6 +1,6 @@
 # IndustryFactoryInstance [![Build Status](https://travis-ci.org/invrs/industry-factory-instance.svg?branch=master)](https://travis-ci.org/invrs/industry-factory-instance)
 
-An Industry plugin that creates an instance of the factory class.
+An [Industry](https://github.com/invrs/industry) plugin that creates an instance of the factory class.
 
 ## Usage
 
