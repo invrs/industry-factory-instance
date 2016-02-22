@@ -56,4 +56,13 @@ describe("factory_instance", () => {
     expect(test("a", true).rand).toEqual(test("a", false).rand)
     expect(test("a", true).rand).not.toEqual(test("b", false).rand)
   })
+
+  it("calls super without the key", () => {
+    test = test.base(class {
+      constructor(...args) {
+        expect(args).toEqual([ "hello" ])
+      }
+    })
+    test("key", "hello")
+  })
 })

@@ -4,7 +4,7 @@ export let factory_instance = Class =>
       let key = "default"
 
       if (typeof args[0] == "string") {
-        key = args[0]
+        key = args.shift()
       }
       
       if (!this[key]) {
