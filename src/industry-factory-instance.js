@@ -8,7 +8,7 @@ export let factory_instance = Class =>
       }
       
       if (!this[key]) {
-        this[key] = new this()
+        this[key] = new this(...args)
       }
       
       if (super.factory) {
