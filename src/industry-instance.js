@@ -1,4 +1,4 @@
-export let factory_instance = Class =>
+export let instance = Class =>
   class extends Class {
     static factory(...args) {
       let key = "default"

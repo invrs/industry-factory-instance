@@ -1,4 +1,4 @@
-# IndustryFactoryInstance [![Build Status](https://travis-ci.org/invrs/industry-factory-instance.svg?branch=master)](https://travis-ci.org/invrs/industry-factory-instance)
+# IndustryInstance [![Build Status](https://travis-ci.org/invrs/industry-instance.svg?branch=master)](https://travis-ci.org/invrs/industry-instance)
 
 An [Industry](https://github.com/invrs/industry) plugin that creates an instance of the factory class.
 
@@ -6,10 +6,10 @@ An [Industry](https://github.com/invrs/industry) plugin that creates an instance
 
 ```js
 import { factory } from "industry"
-import { factory_instance } from "industry-factory-instance"
+import { instance } from "industry-instance"
 
 let test = factory()
-  .set("factory_instance", factory_instance)
+  .set("instance", instance)
   .base(class {
     constructor() {
       this.rand = Math.random()

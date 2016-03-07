@@ -1,12 +1,12 @@
 import { factory } from "industry"
-import { factory_instance } from "../../"
+import { instance } from "../../"
 
-describe("factory_instance", () => {
+describe("instance", () => {
   let test, id
 
   function makeTest(id) {
     return factory()
-      .set("factory_instance", factory_instance)
+      .set("instance", instance)
       .base(class {
         constructor() {
           this.id = id

@@ -1,1 +1,1 @@
-module.exports = require("./lib/industry-factory-instance")
+module.exports = require("./lib/industry-instance")

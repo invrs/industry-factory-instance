@@ -15,11 +15,11 @@ declare -a files=("spec/**/*" "src/*" "index.js" "package.json" "README.md" "bin
 
 for file in "${files[@]}"
 do
-  perl -pi -w -e "s/winton\/industry-factory-instance/$ntuser\/$ntrepo/g;" $file
-  perl -pi -w -e "s/industry-factory-instance/$ntrepo/g;" $file
-  perl -pi -w -e "s/IndustryFactoryInstance/$ntclass/g;" $file
+  perl -pi -w -e "s/winton\/industry-instance/$ntuser\/$ntrepo/g;" $file
+  perl -pi -w -e "s/industry-instance/$ntrepo/g;" $file
+  perl -pi -w -e "s/IndustryInstance/$ntclass/g;" $file
 done
 
-mv spec/integrate/industry-factory-instance.spec.js spec/integrate/$ntfname.spec.js
-mv spec/unit/industry-factory-instance.spec.js spec/unit/$ntfname.spec.js
-mv src/industry-factory-instance.js src/$ntfname.js
+mv spec/integrate/industry-instance.spec.js spec/integrate/$ntfname.spec.js
+mv spec/unit/industry-instance.spec.js spec/unit/$ntfname.spec.js
+mv src/industry-instance.js src/$ntfname.js

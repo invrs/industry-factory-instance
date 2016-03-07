@@ -1,5 +1,5 @@
 {
-  "name": "industry-factory-instance",
+  "name": "industry-instance",
   "version": "0.0.3",
   "description": "",
   "main": "index.js",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/invrs/industry-factory-instance.git"
+    "url": "git+ssh://git@github.com/invrs/industry-instance.git"
   },
   "author": "Winton Welsh <winton@inverse.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/invrs/industry-factory-instance/issues"
+    "url": "https://github.com/invrs/industry-instance/issues"
   },
-  "homepage": "https://github.com/invrs/industry-factory-instance#readme",
+  "homepage": "https://github.com/invrs/industry-instance#readme",
   "dependencies": {
   },
   "devDependencies": {
