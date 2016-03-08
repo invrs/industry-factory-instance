@@ -34,6 +34,13 @@ describe("instance", () => {
     expect(test().id).toEqual(id)
   })
 
+  it("maintains the correct reference even with other calls", () => {
+    expect(test().id).toEqual(id)
+    test(null)
+    test("hello")
+    expect(test().id).toEqual(id)
+  })
+
   it("returns a different instance of the factory class (across factory)", () => {
     let id2 = Math.random()
     let test2 = makeTest(id2)
@@ -43,6 +50,10 @@ describe("instance", () => {
 
   it("returns a different instance of the factory class (by key)", () => {
     expect(test().rand).not.toEqual(test("key").rand)
+  })
+
+  it("returns a new instance of the factory class (null)", () => {
+    expect(test(null).rand).not.toEqual(test(null).rand)
   })
 
   it("returns a different instance of the factory class (across factory by key)", () => {
