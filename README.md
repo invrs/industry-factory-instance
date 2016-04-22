@@ -10,11 +10,12 @@ import { instance } from "industry-instance"
 
 let test = factory()
   .set("instance", instance)
-  .base(class {
-    constructor() {
-      this.rand = Math.random()
-    }
-  })
+
+test = test(class {
+  constructor() {
+    this.rand = Math.random()
+  }
+})
 
 test().rand      == test().rand       // true
 test("key").rand == test("key").rand  // true
