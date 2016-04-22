@@ -8,14 +8,14 @@ Defines a factory function that builds instances.
 import { factory } from "industry"
 import { instance } from "industry-instance"
 
-let test = factory()
-  .set("instance", instance)
-
-test = test(class {
+class Test {
   constructor() {
     this.rand = Math.random()
   }
-})
+}
+
+let test = factory(Test)
+  .set("instance", instance)
 
 test().rand      == test().rand       // true
 test("key").rand == test("key").rand  // true
